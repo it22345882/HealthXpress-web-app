@@ -1,0 +1,350 @@
+body {
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.logo{
+	position:relative;  
+}
+
+.healthlogo{
+    position:absolute;
+    color:rgb(179, 247, 247);
+    padding:0px 0px 0px 20px;
+    left:0;
+    top:0;
+}
+
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+ }
+ 
+ .container .content{
+    text-align: center;
+ }
+ 
+ .container .content h3{
+    font-size: 32px;
+    color:#ffffff;
+ }
+ 
+ .container .content h3 span{
+    background:orangered;
+    color:#fff;
+    border-radius: 5px;
+    padding:0 15px;
+ }
+ 
+ .container .content h1{
+    font-size: 50px;
+    color:#ffffff;
+ }
+ 
+ .container .content h1 span{
+    color:orangered;
+ }
+ 
+ .container .content p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color:white;
+ }
+ 
+
+
+* {
+    box-sizing: border-box;
+}
+.backgroundImage {
+    margin: 0;
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+.containerMain {
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+    text-align: center;
+    color: darkblue;
+    
+}
+
+.homeabout{
+    background-image: url('../images/homeback.jpg');
+    padding:50px;
+    margin:20px auto;
+    position:relative;
+    background-size: 100% auto;
+    background-position: center;
+    
+    text-align:center;
+    
+    min-height:400px;
+}
+
+.homeabout::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.details h2{
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    margin: auto;
+    text-align: center;
+    color: rgb(200, 200, 244);
+    font-size: 30px;
+}
+
+.details p{
+    position:relative;
+    font-size:20px;
+    color:white;
+    line-height: 1.5;
+}
+
+
+
+.home_h1 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px black;
+}
+
+
+
+.pagename{
+	padding:20px;
+}
+
+hr{
+	border: 1px dashed black;
+}
+
+ul.menu {
+    position: absolute;
+    right: 0;
+    top:0;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+}
+.navigate {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigateButtons {
+    display: inline-block;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    color: none;
+    text-decoration: none;
+}
+
+h2.events {
+    padding: 30px 0px 20px 0px;
+}
+
+@media only screen and (max-width: 1400px) {
+    h1.healthlogo {
+        display: none;
+    }
+    
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.column{
+    width:450px;
+    
+}
+ul.articles_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-content:space-evenly;
+    row-gap: 20px;
+    column-gap:10px;
+    margin-bottom:50px;
+}
+.articles_row > li {
+    position: relative;
+    cursor: pointer;
+    flex-basis: 350px; 
+
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(50,50,50,0.4);
+    transform: scale(0);
+    transition: all 0.3s 0.2s ease;
+    color: #eee;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.articles_row li:hover .overlay {
+    transform: scale(1);
+}
+
+.articles_row li img {
+    
+    
+    width: 100%;
+    height:100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+
+
+.buttons {
+    margin: 0 auto;
+
+}
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+}
+
+.footimage {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.footerimage {
+    width: 300px;
+    position: absolute;
+}
+
+.foot_menu_items {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width:850px) {
+    .footer-menu {
+        display: none;
+    }
+}
+
+
+.menu-item {
+    margin: 0 20px;
+    display: block;
+    color: black;
+    font-size: 15px;
+}
+
+    .menu-item a {
+        margin: 0;
+        padding: 10px;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+.social-icons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+    .social-icons a {
+        padding: 20px;
+    }
+
+.menu-item a:hover {
+    color: lightblue;
+}
+
+@media only screen and (max-width:600px) {
+    .social-icons {
+        display: none;
+    }
+}
+

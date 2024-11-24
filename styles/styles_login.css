@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+.back {
+    
+    object-fit: cover;
+    width:100%;
+    min-height:740px;
+    
+    
+    filter:brightness(60%);
+}
+
+.alert{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: 18px;
+    padding:10px;
+    
+    background-color:greenyellow;
+}
+
+.alertwarn{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: 18px;
+    padding:10px;
+    background-color: rgb(251, 111, 104);
+}
+
+
+
+
+.nav {
+    position:absolute;
+    left:50%;
+    top:100%;
+    margin:30px 0 0 0;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 18px;
+    text-decoration:none;
+    text-shadow:2px 2px 8px black;
+}
+
+.health_signup{
+    position: absolute;
+    top: 60px;
+    right: 100px;
+}
+
+.health_login{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+
+.form_login {
+    position:relative;
+    width: 350px;
+    margin: 0;
+    padding: 40px 40px 40px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(251, 251, 251,0.6);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.form_signup {
+    position:relative;
+    width: 350px;
+    margin: 0;
+    padding: 40px 40px 40px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(251, 251, 251,0.6);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.center {
+    position: absolute;
+    top: -10px;
+}
+  
+.container,
+.form_input,
+.form_button {
+    font-size: 500 1rem 'quicksand',sans-serif;
+}
+
+
+
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form_title {
+    text-align: center;
+    margin-bottom: 2px;
+    font-size: 30px;
+    color:black;
+}
+
+.form_message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form_message_success {
+    color: var(--color-success);
+}
+
+.form_message_error {
+    color: var(--color-error);
+}
+
+
+
+.form_input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: content-box;
+    border: 1px solid black;
+    outline: none;
+    background: rgba(255, 255, 255,0.8);
+    transition: background 0.2s border-color 0.2s;
+    border-radius: 25px;
+}
+
+.form_input:focus {
+    border-color: var(--color-primary);
+    background: rgba(240, 240, 240, 0.6);
+}
+
+.form_input_error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form_input_error_message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form_button {
+    width:100%;
+    margin: 20px -20px 20px 0px;
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border: 1px;
+    align-self: center;
+    cursor: pointer;
+    background-color: #808080;
+}
+
+   
+
+.form_button:active {
+    transform: scale(0.98);
+}
+
+.form_text, .inputStyle {
+    color: black;
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.form_link {
+    
+    text-decoration: none;
+    cursor: pointer;
+    color:blue
+    
+}
+
+.form_link:hover {
+    text-decoration: underline;
+}
+
+    
+     
